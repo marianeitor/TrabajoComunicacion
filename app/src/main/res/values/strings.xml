@@ -8,4 +8,5 @@
     <string name="otros">Otros</string>
     <string name="estaciones">Estaciones de Servicio</string>
     <string name="comidas">Comidas Rapidas</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
 </resources>
