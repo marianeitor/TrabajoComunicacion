@@ -3,4 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="farmacias">Farmacias</string>
+    <string name="kioscos">Kioscos</string>
+    <string name="otros">Otros</string>
+    <string name="estaciones">Estaciones de Servicio</string>
+    <string name="comidas">Comidas Rapidas</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
 </resources>
