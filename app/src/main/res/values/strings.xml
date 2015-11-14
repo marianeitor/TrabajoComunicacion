@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TrabajoComunicacion</string>
-    
+
     <string name="title_activity_maps">Map</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -11,4 +11,5 @@
     <string name="comidas">Comidas Rapidas</string>
     <string name="que_buscas">Que estas buscando?</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="maps-key">AIzaSyAaKw-kgm0vE5fnT0ueTRJRunkcHA-xFiI</string>
 </resources>
