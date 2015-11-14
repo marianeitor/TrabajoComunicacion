@@ -89,9 +89,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             latitud = loc.getLatitude();
             String latitude = "Latitude: " + loc.getLatitude();*/
 
-            LatLng cup = new LatLng(latitud,longitud);
+            /*LatLng cup = new LatLng(latitud,longitud);
             mMap.addMarker(new MarkerOptions().position(cup).title("Estas acá"));
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(cup));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(cup));*/
 
 
         /*------- To get city name from coordinates -------- */
@@ -112,13 +112,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         @Override
-        public void onProviderDisabled(String provider) {}
+        public void onProviderDisabled(String provider) {
+
+            Log.println(1,"Check",provider);
+        }
 
         @Override
-        public void onProviderEnabled(String provider) {}
+        public void onProviderEnabled(String provider) {
+            Log.println(1,"Check",provider);
+        }
 
         @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {}
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+            Log.println(1,"Check",provider);
+        }
     }
 
 
