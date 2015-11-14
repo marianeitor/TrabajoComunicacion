@@ -8,12 +8,14 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical">
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Farmacias"
+            android:textColor="@android:color/white"
+            android:text="@string/farmacias"
             android:background="@drawable/button_selector_1"
             android:id="@+id/btnFarmacias"
             android:layout_alignParentTop="true"
@@ -24,8 +26,9 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Estaciones de Servicio"
-            android:background="@drawable/button_selector_1"
+            android:textColor="@android:color/white"
+            android:text="@string/estaciones"
+            android:background="@drawable/button_selector_2"
             android:id="@+id/btnEstaciones"
             android:layout_below="@+id/btnFarmacias"
             android:layout_alignParentRight="true"
@@ -35,8 +38,9 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Comidas Rapidas"
-            android:background="@drawable/button_selector_1"
+            android:textColor="@android:color/white"
+            android:text="@string/comidas"
+            android:background="@drawable/button_selector_3"
             android:id="@+id/btnComidas"
             android:layout_below="@+id/btnKioscos"
             android:layout_alignParentRight="true"
@@ -46,8 +50,9 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Kioscos"
-            android:background="@drawable/button_selector_1"
+            android:textColor="@android:color/white"
+            android:text="@string/kioscos"
+            android:background="@drawable/button_selector_4"
             android:id="@+id/btnKioscos"
             android:layout_below="@+id/btnEstaciones"
             android:layout_alignParentRight="true"
@@ -57,8 +62,9 @@
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Otros"
-            android:background="@drawable/button_selector_1"
+            android:textColor="@android:color/white"
+            android:text="@string/otros"
+            android:background="@drawable/button_selector_5"
             android:id="@+id/btnOtros"
             android:layout_below="@+id/btnComidas"
             android:layout_alignParentRight="true"
