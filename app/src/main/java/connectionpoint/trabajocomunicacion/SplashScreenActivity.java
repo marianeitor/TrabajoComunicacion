@@ -21,12 +21,13 @@ public class SplashScreenActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
+        
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         // Hide title bar
 
         //Adding Animation
-        YoYo.with(Techniques.BounceInRight).delay(0).playOn(findViewById(R.id.imgLogoSplash));
+        YoYo.with(Techniques.RollIn).delay(0).playOn(findViewById(R.id.imgLogoSplash));
 
 
         TimerTask task = new TimerTask() {

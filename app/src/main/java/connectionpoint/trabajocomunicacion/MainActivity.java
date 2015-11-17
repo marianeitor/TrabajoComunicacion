@@ -1,5 +1,6 @@
 package connectionpoint.trabajocomunicacion;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -17,21 +18,41 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Button btnFarmacia = (Button) findViewById(R.id.btnFarmacias);
+        Button btnKiosco = (Button) findViewById(R.id.btnKioscos);
+        Button btnComidas = (Button) findViewById(R.id.btnComidas);
+        Button btnVarios = (Button) findViewById(R.id.btnOtros);
+        Button btnCarneVerdu = (Button) findViewById(R.id.btnCarneVerdu);
 
         btnFarmacia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainIntent = new Intent().setClass(
-                        MainActivity.this, MapsActivity.class);
-                startActivity(mainIntent);
+                openMapActivity("farmacias");
             }
         });
-
-
-
-
-
-
+        btnKiosco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMapActivity("kioscos");
+            }
+        });
+        btnComidas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMapActivity("comidas");
+            }
+        });
+        btnVarios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMapActivity("varios");
+            }
+        });
+        btnCarneVerdu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMapActivity("carneverdu");
+            }
+        });
 
     }
 
@@ -56,5 +77,12 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void openMapActivity(String categoria)
+    {
+        Intent mainIntent = new Intent().setClass(MainActivity.this, MapsActivity.class);
+        mainIntent.putExtra("categoria",categoria);
+        startActivity(mainIntent);
     }
 }

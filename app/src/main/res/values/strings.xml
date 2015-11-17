@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrabajoComunicacion</string>
+    <string name="app_name">24/7</string>
 
     <string name="title_activity_maps">Map</string>
     <string name="hello_world">Hello world!</string>
@@ -9,6 +9,7 @@
     <string name="otros">Otros</string>
     <string name="estaciones">Estaciones de Servicio</string>
     <string name="comidas">Comidas Rapidas</string>
+    <string name="carne_verdu">Carnicerias/Verdulerias</string>values/strings.xml:12
     <string name="que_buscas">Que estas buscando?</string>
-    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_splash_screen">24/7</string>
 </resources>
